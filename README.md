@@ -1,1 +1,1 @@
-# smart-rag-fastapi
+# SmartRAG API
