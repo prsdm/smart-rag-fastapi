@@ -10,10 +10,10 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from pydantic import BaseModel
 from dotenv import load_dotenv
 import tempfile
-
+import os
 app = FastAPI()
 load_dotenv()
-
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
 chat_history = [AIMessage(content="Hello, How can I help you Today?")]
 vector_store = None
 
